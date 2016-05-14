@@ -1,6 +1,6 @@
-# JQEstate country accamulator
+# JQEstate country accumulator
 
-Аккамулирует api.jqestate.ru/v1/properties/country при старте.
+Аккумулирует https://api.jqestate.ru/v1/properties/country при старте.
 Затем раздает по пути /v1/properties, по страницам ограниченым параметрами pagination[limit] и pagination[offset].
 Также можно использовать 2 фильтра:
 * filter[id]
