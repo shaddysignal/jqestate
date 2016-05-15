@@ -68,7 +68,7 @@ object Main extends App with CirceSupport {
       futurePackage.map(pack => {
         val p = pack.pagination
 
-        if (p.total < p.offset + p.limit) None else Some((offset + itemsPerPage, pack.items))
+        if (p.total < p.offset) None else Some((offset + itemsPerPage, pack.items))
       })
     }
 
